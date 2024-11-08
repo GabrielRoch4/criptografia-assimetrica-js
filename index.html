@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia Assimétrica RSA</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/forge/0.10.0/forge.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Criptografia Assimétrica RSA</h1>
+        <button onclick="generateKeys()">Gerar Chaves</button>
+
+        <div class="input-group">
+            <label for="publicKey">Chave Pública:</label>
+            <textarea id="publicKey" readonly></textarea>
+        </div>
+        
+        <div class="input-group">
+            <label for="privateKey">Chave Privada:</label>
+            <textarea id="privateKey" readonly></textarea>
+        </div>
+
+        <div class="input-group">
+            <label for="message">Mensagem:</label>
+            <textarea id="message" placeholder="Digite sua mensagem aqui"></textarea>
+        </div>
+
+        <div class="button-group">
+            <button onclick="encryptMessage()">Criptografar</button>
+            <button onclick="decryptMessage()">Descriptografar</button>
+        </div>
+
+        <div class="output-group">
+            <label for="output">Resultado:</label>
+            <textarea id="output" readonly></textarea>
+        </div>
+    </div>
+</body>
+</html>
