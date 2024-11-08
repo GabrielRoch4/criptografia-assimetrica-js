@@ -8,9 +8,7 @@ This project is a web application that allows encrypting and decrypting messages
 - **node-forge**: Library to perform RSA encryption and decryption.
 
 ## How to Use
-1. Clone the repository:
-
-git clone https://github.com/GabrielRoch4/criptografia-assimetrica-js.git
+1. Clone the repository: **git clone** https://github.com/GabrielRoch4/criptografia-assimetrica-js.git
 
 2. Open the index.html file in a browser.
 
@@ -20,7 +18,8 @@ git clone https://github.com/GabrielRoch4/criptografia-assimetrica-js.git
 - Enter the Message.
 - Click on Encrypt to generate the encrypted message using the public key.
 - To decrypt, paste the encrypted text and click on Decrypt to reveal the original message using the private key.
-- Project Structure
+
+## Project Structure
 - index.html: HTML structure of the interface
 - styles.css: CSS styles
 - script.js: JavaScript logic for encryption and decryption
